@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrizes</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-info navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="menu" href="index.html">Matrizes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="menu" href="teste.html">Teste</a>
+                </li>
+            </ul>
+            <h2 id="menu">Mikaely Almeida 2° Informática
+                Prof.º Ernani Gottardo</h2>
+        </div>
+    </nav>
+
+    <h1 id="title">Matrizes</h1>
+    <h2 id="subtitulo">O que são as Matrizes?</h2>
+    <h3 id="texto">As matrizes são sequências de números que ficam dentro de parênteses ou colchetes em forma de linhas
+        e colunas,
+        que estabelecem algumas regras, significados e diferenciações. Também ajudam a organizar os dados de uma
+        determinada situação.</h3>
+
+    <div id="img">
+        <h3 id="texto">Analise abaixo uma imagem representativa.</h3>
+        <img src="./imagens/matriz.png">
+    </div>
+
+    <div id="texto">
+        <p>Se o número de linhas for diferente do número de colunas a matriz é RETANGULAR;
+            <br>
+            Se o número de linhas for igual ao número de colunas a matriz é QUADRADA;
+            <br>
+            O A pode ser definido como [Aij] ou [A] que eu mais utilizo;
+        </p>
+
+        <h1 id="subtitulo">Diagonais da Matriz QUADRADA</h1>
+        <p>Toda matriz quadrada tem duas diagonais que são definidas como "principal" e "secundária", ambas compartilham
+            um único elemento em comum que é o número do centro da matriz.</p>
+        <p>Veja a imagem abaixo de um exemplo do meu caderno.</p>
+        <img id="img" src="./imagens/exemploM.Q.jpg">
+    </div>
+
+    <div>
+        <h1 id="subtitulo">Matriz Diagonal</h1>
+        <p id="texto">É quando só irá ter elementos (números) diferentes de 0 na diagonal principal.</p>
+        <table border="1" id="tabela">
+            <tr id="linha">
+                <th colspan="3">Matriz Diagonal</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>20</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>9</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1 id="subtitulo">Matriz Identidade</h1>
+        <p id="texto">É quando todos os elementos (números) da diagonal principal são todos "1".</p>
+        <table border="1" id="tabela">
+            <tr id="linha">
+                <th colspan="3">Matriz Identidade</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1</td>
+                <td>-1</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>8</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p id="texto">Toda vez que tivermos uma matriz identidade multiplicada por outra matriz o resultado será a
+            matriz pela qual ela foi multiplicada, veja:</p>
+        <table border="1" id="tabela">
+            <tr id="linha">
+                <th colspan="3">Matriz Identidde</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <table border="1" id="tabela">
+            <tr id="linha">
+                <th colspan="3">Matriz 3X2</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <table border="1" id="tabela">
+            <tr id="linha">
+                <th colspan="3">Matriz originada</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1 id="subtitulo">Como realizar a adição de Matrizes?</h1>
+        <p id="texto">Na somatória de matrizes você irá ter duas matrizes para somar e gerar uma nova matriz.</p>
+        <ul>
+            <li>Pegar o 1° elemento da linha da 1ª matriz e somar com o 1° elemento da linha da 2ª matriz;</li>
+            <li>Elementos da 1ª linha da matriz 1 soma com todos os elementos da 1ª linha da matriz 2;</li>
+            <li>Fazendo esse processo você terá a origem de uma nova matriz.</li>
+        </ul>
+        <p id="texto">Observe um exemplo:</p>
+        <img id="img" src="./imagens/exemploS.M.jpg">
+        <p id="texto">Com esse exemplo que eu fiz e adaptei colocando cores é mais fácil de entender o processo, os
+            elementos em amarelo foram somados uns com os outros, os elementos laranja foram somados e os verde também.
+            Eu fiz os cálculos na folha para deixar explícito de onde veio os valores, cada valor gerado equivale a uma
+            cor que condiz aos números somados.</p>
+        <table border="1" id="tabela">
+            <tr id="linha">
+                <th colspan="3">Nova Matriz</th>
+            </tr>
+            <tr>
+                <td>-9</td>
+                <td>2</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>7/3</td>
+                <td>-1</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1 id="subtitulo">Como realizar a subtração de Matrizes?</h1>
+        <p id="texto">Na subtração de matrizes você terá duas matrizes para subtrair uma pela outra.</p>
+        <ul>
+            <li>Todos os sinais da segunda matriz serão alterados;</li>
+            <li>Realize a subtração de elemento por elemento, 1° elemento da linha 1 com o 1° elemento da linha 1 da
+                matriz 2.... e assim consecutivamente;</li>
+            <li>Fazendo esse processo você terá a origem de uma nova matriz resultado da subtração.</li>
+        </ul>
+        <p id="texto">Observe um exemplo:</p>
+        <img id="img" src="./imagens/fotoportfolio3.jpg">
+    </div>
+
+    <h1 id="subtitulo">Multiplicação de uma matriz por um escalar</h1>
+    <p id="texto">Todos os elementos (um por um) de uma matriz serão inteiramente multiplicados por um escalar(único
+        número) que irá gerar uma nova matriz, observe os exemplos abaixo.</p>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="2">Matriz 2X2</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>-4</td>
+        </tr>
+    </table>
+    <p id="texto">Essa matriz será multiplicada pelo escalar (-3).</p>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="3">Nova Matriz</th>
+        </tr>
+        <tr>
+            <td>-6</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>-3</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <p id="texto">Outro exemplo, essa matriz será multiplicada pelo escalar 5.</p>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="3">Matriz 2X3</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>-2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>4</td>
+            <td>-1</td>
+        </tr>
+    </table>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="3">Nova Matriz</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>5</td>
+            <td>-10</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>20</td>
+            <td>-5</td>
+        </tr>
+    </table>
+
+
+    <h1 id="subtitulo">Multiplicação de matrizes</h1>
+    <p id="texto">Para ser possível realizar a multiplicação de matrizes o número de colunas da 1ª matriz tem que ser
+        igual ao número de linhas da 2ª matriz, se esse detalhe não for notado na matriz a multiplicação não poderá ser
+        realizada, ou seja, ela não irá existir e deverá ser informada com o símbolo de "não existe" no exercício.</p>
+    <p id="texto">Mas como fazer essa multiplicação?</p>
+    <ul>
+        <li>Pegue a 1ª linha da matriz 1 e multiplique por TODAS as colunas da matriz 2;</li>
+        <li>Pegue a 2ª linha da matriz 1 e multiplique por TODAS as colunas da matriz 2;</li>
+        <li>Fazendo esse processo você terá a origem de uma nova matriz resultado das multiplicações;</li>
+        <li>Sempre será as linhas da 1ª matriz vezes todas as colunas da 2ª matriz, é isso que irá gerar uma nova matriz
+            correspondente.</li>
+    </ul>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="2">Matriz 2X2</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>-1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <p id="texto">Essa matriz será multiplicada por outra.</p>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="2">Matriz 2X2</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>-1</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <p id="texto">Observe que só será possível realizar essa multiplicação porque a 1ª matriz tem o mesmo nº de colunas
+        que as linhas da 2ª matriz!</p>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="2">Multiplicação</th>
+        </tr>
+        <tr>
+            <td>2.1 + (-1).-1</td>
+            <td>2.3 + (-1).2</td>
+        </tr>
+        <tr>
+            <td>0.1 + 3.(-1)</td>
+            <td>0.3 + 3.2</td>
+        </tr>
+    </table>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="2">Nova matriz</th>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>-3</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+
+    <h1 id="subtitulo">Matriz Transposta</h1>
+    <p id="texto">A matriz transposta é descrita como A^t, para entendê-la é muito fácil, quando forem dadas uma ou mais
+        matrizes e uma delas estiver elevada a "t" será transposta, isso quer dizer basicamente que, as linhas dessa
+        matriz serão agora as colunas.
+        Observe abaixo alguns exemplos.
+    </p>
+
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="3">Matriz 2X3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>-2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1</td>
+            <td>-1</td>
+        </tr>
+    </table>
+
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="2">Transposta 3X2</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>-2</td>
+            <td>-1</td>
+        </tr>
+    </table>
+
+    <p id="texto">Analise abaixo um exercício com matriz transposta:</p>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="3">Matriz 3X2</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>-1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="3">Matriz Transposta</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>-1</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="3">Matriz B</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>4</td>
+            <td>-5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>0</td>
+        </tr>
+    </table>
+
+    <p id="texto"> Faça o cálculo A^t- 3.B</p>
+    <p id="texto">Para fazermos esse cálculo temos que transformar a matriz transposta denovo como ela era e depois
+        multiplicar todos os elementos da matriz B por (-3)</p>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="3">Matriz B multiplicada por 3</th>
+        </tr>
+        <tr>
+            <td>-3</td>
+            <td>-12</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>-9</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="3">Matriz 3X2</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>-1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <p id="texto">Agora precisamos somar essas duas matrizes e ver qual matriz irá surgir.</p>
+    <table border="1" id="tabela">
+        <tr id="linha">
+            <th colspan="3">Matriz 3X2 originada da soma</th>
+        </tr>
+        <tr>
+            <td>-1</td>
+            <td>-12</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>-6</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <p id="texto">Agora que você já sabe alguns conceitos de matrizes, na página a seguir você poderá informar suas
+        matrizes e realizar algumas operações como multiplicar por um escalar, soma, subtração e multiplicação de duas
+        matrizes.</p>
+
+    <p><a href="index.html" class="opcao">Voltar ao topo</a></p>
+    <p><a href="./teste.html" class="opcao">Próximo</a></p>
+
+</body>
+
+</html>

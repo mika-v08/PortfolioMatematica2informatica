@@ -1,0 +1,85 @@
+#title {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(53, 155, 155);
+    border: 6px dashed rgba(3, 146, 146, 0.418);
+    border-radius: 15px;
+    padding: 4px;
+    margin-top: 8px;
+    margin-right: 500px;
+    margin-left: 500px;
+    background-color: rgb(177, 235, 250);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#texto {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin: 10px 20px 30px 20px;
+}
+
+#subtitulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: deeppink;
+    margin-left: 8px;
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+#menu {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: beige;
+}
+
+#img {
+    width: 450px;
+    height: 300px;
+    margin-left: 5px;
+}
+
+#tabela {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 24px;
+    margin-bottom: 22px;
+    display: inline-table;
+    border-color: rgb(216, 13, 216);
+}
+
+.opcao {
+    color: darkmagenta;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+
+#linha {
+    color: rgb(53, 155, 155);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#tablee {
+    margin-left: 24px;
+    margin-bottom: 22px;
+    display: inline-table;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color: rgb(216, 13, 216);
+}
+
+/*nao consegui ajustar os sinais*/
+#sinal {
+    color: deeppink;
+    display: inline-table;
+    margin-left: 14px;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#escalar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 22px;
+    margin-left: 24px;
+    display: inline-table;
+}
